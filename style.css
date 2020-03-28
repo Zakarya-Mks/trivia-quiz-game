@@ -49,9 +49,6 @@ body {
   justify-content: space-between;
   padding: 0 40px 10px 40px;
 }
-.underTitle > label {
-  border-bottom: dashed #ddd 1px;
-}
 .inputContainer {
   display: flex;
   flex-direction: column;
