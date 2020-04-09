@@ -143,14 +143,14 @@ p.noPadding {
 }
 .textAlertLabel {
   color: red;
-  font-size: 18px;
+  font-size: 1.125em;
 }
 .scoreContainer {
   display: flex;
 }
 .score {
   width: 70%;
-  font-size: 50px;
+  font-size: 3.125em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,7 +234,7 @@ p.noPadding {
   padding-right: 10px;
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .theAnswerBottomSection {
   display: flex;
@@ -243,10 +243,10 @@ p.noPadding {
 .theQuestionCorrectAnswer {
   display: flex;
   align-items: center;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .fa-chevron-right {
-  font-size: 13px;
+  font-size: 0.813em;
   margin-right: 15px;
   transition: all 0.5s;
 }
@@ -364,3 +364,230 @@ input[type="radio"]:checked + .inputLabel {
 }
 /* animation */
 /* animation */
+/*  */
+/*  */
+/* Media Query */
+/*  */
+/* 4K 2560px */
+@media only screen and (max-width: 4000px) and (min-width: 2565px) {
+  * {
+    font-size: 25px;
+  }
+  .titleText {
+    font-size: 55px;
+  }
+  .buttonContainer {
+    width: 100%;
+    bottom: 90px;
+  }
+  .mainButton {
+    width: 20%;
+    margin-left: 40px;
+  }
+  .resultLabel {
+    font-size: 1em;
+  }
+  .result {
+    font-size: 3em;
+  }
+  .scoreBottomSection {
+    height: 61%;
+  }
+  .theAnswer > div {
+    font-size: 30px;
+  }
+  .theQuestionCorrectAnswer {
+    font-size: 30px;
+  }
+  .singleAnswerResult {
+    margin: 0 15px 5px 15px;
+    border: solid 1px #ddd;
+    padding: 5px 0 5px 10px;
+  }
+  .showSelectedDivContent {
+    height: 90px;
+  }
+  .fa-chevron-right {
+    font-size: 0.713em;
+  }
+}
+/*  */
+/*  */
+/* Galaxy S10 */
+@media only screen and (max-width: 1080px) and (min-width: 1025px) {
+  * {
+    font-size: 40px;
+  }
+  .middleContainer {
+    width: 95%;
+    overflow-y: auto;
+  }
+  .titleText {
+    font-size: 90px;
+  }
+  .underTitle {
+    padding: 0 15px;
+  }
+  p.inputLabel.noPadding {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .buttonContainer {
+    width: 100%;
+    bottom: 150px;
+  }
+  .mainButton {
+    width: 95%;
+    margin-left: 40px;
+  }
+  .answerContainer {
+    border: solid #bbd1ea 3px;
+  }
+  .theQuestionCorrectAnswer {
+    font-size: 1em;
+  }
+  .resultLabel {
+    font-size: 0.6em;
+  }
+  .result {
+    font-size: 3em;
+  }
+  .scoreBottomSection {
+    height: 65%;
+  }
+  .singleAnswerResult {
+    margin: 0 15px 20px 10px;
+    border: solid 1.5px #ddd;
+    padding: 5px 0 5px 20px;
+  }
+  .showSelectedDivContent {
+    height: 120px;
+  }
+  .fa-chevron-right {
+    font-size: 0.613em;
+  }
+}
+/*  */
+/*  */
+/* laptops 1024px*/
+/*  */
+@media only screen and (max-width: 1024px) and (min-width: 901px) {
+  * {
+    font-size: 12px;
+  }
+  .middleContainer {
+    width: 55%;
+  }
+  .titleText {
+    font-size: 25px;
+  }
+  .underTitle {
+    padding: 0 30px;
+  }
+  p.inputLabel.noPadding {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .buttonContainer {
+    width: 100%;
+    padding-left: 37px;
+    bottom: 35px;
+  }
+  .mainButton {
+    width: 27%;
+    margin-left: 0;
+  }
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  .answerContainer {
+    border: solid #bbd1ea 1px;
+  }
+  .theQuestionCorrectAnswer {
+    font-size: 1em;
+  }
+  .resultLabel {
+    font-size: 1em;
+  }
+  .result {
+    font-size: 3em;
+  }
+  .scoreBottomSection {
+    height: 53%;
+  }
+  .theAnswer > div {
+    font-size: 17px;
+  }
+  .theQuestionCorrectAnswer {
+    font-size: 17px;
+  }
+  .singleAnswerResult {
+    margin: 0 15px 5px 5px;
+    border: solid 1px #ddd;
+    padding: 5px 0 5px 10px;
+  }
+  .showSelectedDivContent {
+    height: 45px;
+  }
+  .fa-chevron-right {
+    font-size: 0.813em;
+  }
+}
+/*  */
+/*  */
+/* iPhone X */
+/*  */
+@media only screen and (max-width: 900px) {
+  * {
+    font-size: 14px;
+  }
+  .middleContainer {
+    width: 95%;
+    overflow-y: auto;
+  }
+  .titleText {
+    font-size: 30px;
+  }
+  .underTitle {
+    padding: 0 15px;
+  }
+  p.inputLabel.noPadding {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .buttonContainer {
+    width: 100%;
+    bottom: 50px;
+  }
+  .mainButton {
+    width: 95%;
+    margin-left: -5px;
+  }
+  .answerContainer {
+    border: solid #bbd1ea 1.5px;
+  }
+  .theQuestionCorrectAnswer {
+    font-size: 1em;
+  }
+  .resultLabel {
+    font-size: 0.6em;
+  }
+  .result {
+    font-size: 3em;
+  }
+  .scoreBottomSection {
+    height: 65%;
+  }
+  .singleAnswerResult {
+    margin: 0 15px 10px 5px;
+    border: solid 1px #ddd;
+    padding: 5px 0 5px 10px;
+  }
+  .showSelectedDivContent {
+    height: 45px;
+  }
+  .fa-chevron-right {
+    font-size: 0.813em;
+  }
+}
