@@ -288,7 +288,7 @@ hr {
 }
 /* selected */
 .selectedAnswer {
-  background-color: #759dd3;
+  background-color: #759dd3 !important;
 }
 input[type="radio"]:checked + .inputLabel {
   color: white;
@@ -369,7 +369,7 @@ input[type="radio"]:checked + .inputLabel {
 /* Media Query */
 /*  */
 /* 4K 2560px */
-@media only screen and (max-width: 4000px) and (min-width: 2565px) {
+@media only screen and (min-width: 2560px) {
   * {
     font-size: 25px;
   }
@@ -381,6 +381,7 @@ input[type="radio"]:checked + .inputLabel {
     bottom: 90px;
   }
   .mainButton {
+    background-color: red;
     width: 20%;
     margin-left: 40px;
   }
@@ -413,13 +414,14 @@ input[type="radio"]:checked + .inputLabel {
 }
 /*  */
 /*  */
-/* Galaxy S10 */
+/* Galaxy S10 res*/
 @media only screen and (max-width: 1080px) and (min-width: 1025px) {
   * {
     font-size: 40px;
   }
   .middleContainer {
     width: 95%;
+    position: relative;
     overflow-y: auto;
   }
   .titleText {
@@ -434,14 +436,15 @@ input[type="radio"]:checked + .inputLabel {
   }
   .buttonContainer {
     width: 100%;
-    bottom: 150px;
+    position: absolute;
+    bottom: 40px;
   }
   .mainButton {
     width: 95%;
     margin-left: 40px;
   }
   .answerContainer {
-    border: solid #bbd1ea 3px;
+    border: solid white 1px;
   }
   .theQuestionCorrectAnswer {
     font-size: 1em;
@@ -457,7 +460,7 @@ input[type="radio"]:checked + .inputLabel {
   }
   .singleAnswerResult {
     margin: 0 15px 20px 10px;
-    border: solid 1.5px #ddd;
+    border: solid 1.5px white;
     padding: 5px 0 5px 20px;
   }
   .showSelectedDivContent {
@@ -471,7 +474,7 @@ input[type="radio"]:checked + .inputLabel {
 /*  */
 /* laptops 1024px*/
 /*  */
-@media only screen and (max-width: 1024px) and (min-width: 901px) {
+@media only screen and (max-width: 1024px) {
   * {
     font-size: 12px;
   }
@@ -502,7 +505,7 @@ input[type="radio"]:checked + .inputLabel {
     height: 30px;
   }
   .answerContainer {
-    border: solid #bbd1ea 1px;
+    border: solid white 1px;
   }
   .theQuestionCorrectAnswer {
     font-size: 1em;
@@ -524,7 +527,7 @@ input[type="radio"]:checked + .inputLabel {
   }
   .singleAnswerResult {
     margin: 0 15px 5px 5px;
-    border: solid 1px #ddd;
+    border: solid 1px white;
     padding: 5px 0 5px 10px;
   }
   .showSelectedDivContent {
@@ -536,14 +539,15 @@ input[type="radio"]:checked + .inputLabel {
 }
 /*  */
 /*  */
-/* iPhone X */
+/* phones 900px */
 /*  */
 @media only screen and (max-width: 900px) {
   * {
     font-size: 14px;
   }
   .middleContainer {
-    width: 95%;
+    min-width: 95%;
+    position: relative;
     overflow-y: auto;
   }
   .titleText {
@@ -558,14 +562,19 @@ input[type="radio"]:checked + .inputLabel {
   }
   .buttonContainer {
     width: 100%;
-    bottom: 50px;
+    position: absolute;
+    bottom: 20px;
   }
   .mainButton {
-    width: 95%;
+    width: 100%;
     margin-left: -5px;
   }
+  svg {
+    width: 40px;
+    height: 40px;
+  }
   .answerContainer {
-    border: solid #bbd1ea 1.5px;
+    border: solid white 1px;
   }
   .theQuestionCorrectAnswer {
     font-size: 1em;
@@ -581,8 +590,14 @@ input[type="radio"]:checked + .inputLabel {
   }
   .singleAnswerResult {
     margin: 0 15px 10px 5px;
-    border: solid 1px #ddd;
+    border: solid 1px white;
     padding: 5px 0 5px 10px;
+  }
+  .theAnswer > div {
+    font-size: 17px;
+  }
+  .theQuestionCorrectAnswer {
+    font-size: 17px;
   }
   .showSelectedDivContent {
     height: 45px;
