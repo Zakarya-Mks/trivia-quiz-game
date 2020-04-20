@@ -2,7 +2,7 @@
   box-sizing: border-box;
   font-family: "Baloo Chettan 2", cursive;
   outline: none;
-  color: black;
+  color: #050505;
 }
 body {
   padding: 0;
@@ -42,7 +42,6 @@ body {
 }
 .titleText {
   text-transform: uppercase;
-  color: black;
 }
 .underTitle {
   display: flex;
@@ -60,7 +59,7 @@ body {
 }
 .form-control {
   font-size: 1.563em;
-  border: none;
+  border: 1px transparent solid;
   border-radius: 0.2em;
 }
 input {
@@ -106,6 +105,9 @@ svg {
 }
 .fa-check-circle {
   color: green;
+}
+.redFocus{
+  border: red solid 1px;
 }
 /*------------------------ Second Container --------------------------------*/
 

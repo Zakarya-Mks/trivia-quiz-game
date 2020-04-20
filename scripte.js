@@ -3,7 +3,8 @@
 // Data
 const mainData = {
   currentQuestion: 0,
-  questions: []
+  questions: [],
+  Categories: ['General Knowledge','Entertainment: Books','Entertainment: Film','Entertainment: Music','Entertainment: Musicals & Theatres','Entertainment: Television','Entertainment: Video Games','Entertainment: Board Games','Science & Nature','Science: Computers','Science: Mathematics','Mythology','Sports','Geography','History','Politics','Art','Celebrities','Animals','Vehicles','Entertainment: Comics','Science: Gadgets','Entertainment: Japanese Anime & Manga','Entertainment: Cartoon & Animations']
 };
 
 // All Dom Elements
@@ -34,12 +35,27 @@ let domElement = {
 //
 // Main Event Listeners
 //
-domElement.middleContainer.addEventListener("click", event => {
+domElement.middleContainer.addEventListener("click", event => {  
+
   // Start The Game Button Event
   if (event.target.id === "StartGame") {
-    domElement.mainButton.innerHTML = `Loading ${domElement.svgIcon}`;
-    let queryString = fetchInputData();
-    callServer(queryString);
+    // validation for the number of questions
+    if( Number(domElement.count.value) > 0 && !Number.isNaN(Number(domElement.count.value)) ){
+      domElement.mainButton.innerHTML = `Loading ${domElement.svgIcon}`;
+      let queryString = fetchInputData();
+      callServer(queryString);
+    } else {
+        domElement.count.classList.add("redFocus");
+        domElement.count.classList.add("animate");
+        setTimeout(() => {
+          domElement.count.classList.remove("animate");
+        }, 500);
+    }    
+  }
+
+  // Clear the red Focus
+  if(event.target.id == "trivia_amount"){
+    domElement.count.classList.remove("redFocus");
   }
 
   // clicked Answer Event
@@ -128,6 +144,15 @@ domElement.middleContainer.addEventListener("click", event => {
     location.reload();
   }
 });
+
+domElement.middleContainer.addEventListener('input',event => {
+  //number of questions limit to 50 
+  if(event.target.id == "trivia_amount"){
+    if(domElement.count.value.length > 2 || domElement.count.value > 50){
+      domElement.count.value = 50;
+    }
+  }
+})
 
 // ******** Main Logic & api Call  & Functions ********************************************************************
 //
@@ -255,6 +280,18 @@ function collapseAllChevrons() {
 
 // ******** UI ********************************************************************
 //
+// Fill in The Categories 
+//
+  (function fillTheCategories(){
+    let tempArr = Array.from(mainData.Categories);
+    tempArr.sort();
+    let strTemplate = "";
+
+    for(let item of tempArr){
+      strTemplate = `<option value="${(mainData.Categories.indexOf(item))+9}">${item}</option>`; 
+      domElement.category.insertAdjacentHTML("beforeend", strTemplate);
+    }
+  })();
 // Display the Questions to the UI
 function displayQuestion(questionIndex) {
   //Get The Answers Shuffled
@@ -306,7 +343,7 @@ function displayQuestion(questionIndex) {
 // Get Field Value As A String
 function fetchInputData() {
   domElement.queryString = `https://opentdb.com/api.php?amount=${domElement.count.value}`;
-  if (domElement.category.value !== "any") {
+  if (domElement.category.value !== "any") {    
     domElement.queryString += `&category=${domElement.category.value}`;
   }
   if (domElement.difficulty.value !== "any") {
