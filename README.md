@@ -5,3 +5,6 @@ First side project in HTML/CSS/JS
 used a public API to fetch trivia questions, then implemented the logic to handle user answers and display a final score
 
 public API link [opentdb](https://opentdb.com)
+
+To test the game : [Online trivia quiz game](https://zakarya-mks.github.io/trivia-quiz-game)
+
