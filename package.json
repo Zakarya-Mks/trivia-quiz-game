@@ -1,0 +1,30 @@
+{
+  "name": "trivia_quise_game",
+  "version": "1.0.0",
+  "description": "Trivia Quiz Game",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zakarya-Mks/trivia-quiz-game.git"
+  },
+  "keywords": [
+    "Trivia",
+    "Game",
+    "Quiz",
+    "Qusetions",
+    "Answers",
+    "OnlineGame"
+  ],
+  "author": "Zack-Mks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zakarya-Mks/trivia-quiz-game/issues"
+  },
+  "homepage": "https://github.com/Zakarya-Mks/trivia-quiz-game#readme",
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  }
+}

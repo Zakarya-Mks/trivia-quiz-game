@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Baloo Chettan 2', cursive;
+  font-weight: normal !important;
+}
+
+body {
+  background: linear-gradient(0deg, #7250bc7a, #507dbc);
+  overflow-x: hidden;
+}
+
+/* Scroll Bar */
+body::-webkit-scrollbar-track {
+  background-color: #a1c6ea;
+  border-radius: 10px;
+  border: solid 0.5px #ddd;
+}
+body::-webkit-scrollbar {
+  width: 6px;
+  background-color: #a1c6ea;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.card {
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+}
+
+.card-bg-custom {
+  background-color: #a1c6ea;
+}
+
+.img-custom {
+  width: 98px;
+  height: 70px;
+}
+
+.btn-custom {
+  background-color: #dae3e5;
+}
+
+svg {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.mainButton {
+  font-size: 1.5rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.shadowEffect {
+  font-size: 1.3rem;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.mainButton:hover {
+  cursor: pointer;
+}
+.mainButton:active {
+  outline: none !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.noMargin {
+  margin-bottom: 0 !important;
+}
+
+.bg-success-light {
+  background-color: #d4edda !important;
+  border: solid 1px #d4edda !important;
+}
+.bg-danger-light {
+  background-color: #f8d7da !important;
+  border: solid 1px #f8d7da !important;
+}
+.redColor {
+  color: red !important;
+}
+.greenColor {
+  color: green !important;
+}
+
+.noShadow {
+  box-shadow: none !important;
+}
+
+.customBorder {
+  border-top: dashed white 1px;
+}
+
+.answerScroll {
+  height: 350px;
+  overflow: hidden scroll;
+}
+
+.answerScroll::-webkit-scrollbar-track {
+  background-color: #a1c6ea;
+  border-radius: 10px;
+  border: solid 0.5px #ddd;
+}
+.answerScroll::-webkit-scrollbar {
+  width: 6px;
+  background-color: #a1c6ea;
+  border-radius: 10px;
+}
+.answerScroll::-webkit-scrollbar-thumb {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+/* Questions Info */
+.badge {
+  font-size: 1rem !important;
+}
+
+/* Custom Font size */
+.input-font-size {
+  font-size: 1.3rem !important;
+}
+
+/* No Answer Selected red label */
+.textAlert {
+  opacity: 0;
+}
+.textAlertLabel {
+  color: red;
+  font-size: 1.125em;
+}
+
+/* Error Red Focus */
+.redFocus {
+  border: red solid 1px !important;
+}
+
+/* Hide Dome Element */
+.hide {
+  display: none !important;
+}
+
+/* Clicked answer */
+.selectedAnswer {
+  background-color: #759dd3 !important;
+  color: white;
+}
+
+/* Hide Radio Buttons */
+input[type='radio'] {
+  display: none;
+}
+
+/* cursor Pointer*/
+.cursor {
+  cursor: pointer;
+}
+
+/* No Answer chosen Err animation*/
+.animate {
+  animation-name: shake-horizontal;
+  animation-duration: 0.8s;
+}
+
+/* animation */
+/* animation */
+@-webkit-keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+@keyframes shake-horizontal {
+  0%,
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  80% {
+    -webkit-transform: translateX(8px);
+    transform: translateX(8px);
+  }
+  90% {
+    -webkit-transform: translateX(-8px);
+    transform: translateX(-8px);
+  }
+}
+/* animation */
+/* animation */
+/*  */
+/*  */
