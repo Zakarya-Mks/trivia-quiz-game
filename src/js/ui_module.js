@@ -197,7 +197,7 @@ export function showResult(score, outOff) {
     }
   }
 
-  templateString += `<div class="answerScroll"><div class="accordion px-3" id="AnswerLog">${stringToInsert}</div></div></div></div></div>`;
+  templateString += `<div class="answerScroll"><div class="accordion px-1" id="AnswerLog">${stringToInsert}</div></div></div></div></div>`;
   removeDomElement();
   data_module.domElement.middleContainer.insertAdjacentHTML(
     'beforeend',
