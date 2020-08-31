@@ -8,4 +8,4 @@ public API link [opentdb](https://opentdb.com)
 
 To test the game : [Online trivia quiz game](https://zakarya-mks.github.io/trivia-quiz-game)
 
-![image](https://user-images.githubusercontent.com/59210574/91726111-a2138a00-eb97-11ea-9d76-bece85ec7a4b.png)
+![image](https://user-images.githubusercontent.com/59210574/83785660-8cbabc80-a689-11ea-9b90-33c50ab5ae95.png)
