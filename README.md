@@ -1,6 +1,6 @@
 # About Trivia Quiz Game
 
-First side project in HTML/CSS/BOOTSTRAP/JS
+a vanilla js game, based on the famous trivia quize game, project in HTML/CSS/BOOTSTRAP/JS
 
 used a public API to fetch trivia questions, then implemented the logic to handle user answers and display a final score
 
